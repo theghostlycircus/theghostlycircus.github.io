@@ -1,24 +1,52 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Map B</title>
+  <meta charset="UTF-8">
+  <title>Map B</title>
+  <style>
+    body {
+      background: #D7CEBF;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    img[usemap] {
+      border: none;
+      height: auto;
+      max-width: 100%;
+      width: auto;
+    }
+  </style>
 </head>
 
-<body style="background-color:#000000;">
-<p style="text-align: center;"><img src="Map-B.jpg" alt="" width="1440" height="809" usemap="#Map"/>
-<map name="Map"><area shape="circle" coords="736,344,26" href="https://vimeo.com/465281153/bb44f2707f" target="_self">
-  <area shape="circle" coords="573,269,27" href="https://vimeo.com/465281153/bb44f2707f" target="_self">
-  <area shape="circle" coords="751,173,23" href="https://vimeo.com/465281153/bb44f2707f" target="_self">
-  <area shape="poly" coords="1064,366,1095,397,1128,367,1097,336,1065,366" href="https://us02web.zoom.us/j/84282929500?pwd=L05IR0N3czJBMGVlemttZGZ3OHp5QT09" target="_blank" alt="">
-  <area shape="poly" coords="1437,481,1479,438,1524,479,1480,525,1440,482" href="https://us02web.zoom.us/j/84282929500?pwd=L05IR0N3czJBMGVlemttZGZ3OHp5QT09" target="_blank">
-  <area shape="rect" coords="606,9,829,67" href="https://7textures.com/" target="_blank">
-  <area shape="rect" coords="93,102,259,197" href="http://www.fortmifflin.us/the-history/" target="_blank">
-  <area shape="rect" coords="1678,844,1804,957" href="https://docs.google.com/document/d/1oxdCfIc3kbREAi_3VOwWubDx8xuBo4jEH9MHm6XyMUo/edit?usp=sharing" target="_blank">
-  <area shape="rect" coords="1250,635,1339,717" href="#">
-  <area shape="poly" coords="677,205,646,234,677,268,710,235,678,205" href="#">
-  <area shape="poly" coords="1073,132,1041,162,1073,194,1102,162,1073,131" href="#">
-</map>
-</p>
+<body>
+  <div>
+    <img src="MapB.jpg" width="1920" height="1080" usemap="#Map" />
+    <map name="Map">
+	 <area target="_self" alt="Peacock Pride" title="Peacock Pride" href="https://theghostlycircus.github.io/PeacockPride.html" coords="769,353,32" shape="circle">
+    <area target="_self" alt="" title="" href="https://theghostlycircus.github.io/PeacockPride.html" coords="980,453,34" shape="circle">
+    <area target="_self" alt="Serenading Centaur" title="Serenading Centaur" href="https://theghostlycircus.github.io/SerenadingCentaur.html" coords="1003,229,30" shape="circle">
+    <area target="_blank" alt="Green Room" title="Green Room" href="https://us02web.zoom.us/j/87516468670?pwd=Nys3c1prckFHUm1KLzVoTkVkcUx4Zz09" coords="903,271,864,312,907,353,944,312" shape="poly">
+    <area target="_blank" alt="Green Room" title="Green Room" href="https://us02web.zoom.us/j/85826784514?pwd=UnZOMks5RnZmNmZyOXNjaTllM0kyZz09" coords="1371,210,1412,170,1454,207,1414,254" shape="poly">
+	<area target="_blank" alt="Fort Mifflin Historty" title="Fort Mifflin Historty" href="http://www.fortmifflin.us/the-history" coords="342,132,120,253" shape="rect">
+    <area target="_blank" alt="7textures" title="7textures" href="http://7textures.com" coords="812,17,1105,73" shape="rect">
+    <area target="_self" alt="Front Gate" title="Front Gate" href="https://us02web.zoom.us/j/85826784514?pwd=UnZOMks5RnZmNmZyOXNjaTllM0kyZz09" coords="1422,487,1468,444,1510,484,1466,533" shape="poly">
+    <area target="_parent" alt="Programme" title="Programme" href="https://7textures.com/program" coords="1670,852,1790,960" shape="rect">
+    </map>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+
 </body>
+
 </html>
