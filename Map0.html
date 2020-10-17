@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Front Gate</title>
   <style>
     body {
       background: #D7CEBF;
@@ -23,20 +23,20 @@
 </head>
 
 <body>
-  <div><img src="Map0.jpg" width="1920" height="1080" usemap="#Map"/>
+  <div>
+    <img src="Map0.jpg" width="1920" height="1080" usemap="#Map" />
     <map name="Map">
-   
-      <area shape="rect" coords="87,96,250,188" href="http://www.fortmifflin.us/the-history" target="_blank">
-      <area shape="rect" coords="597,7,816,56" href="https://7textures.com/program" target="_blank">
-      <area shape="rect" coords="1242,626,1330,709" href="https://7textures.com/program" target="_blank">
-      <area shape="poly" coords="1048,359,1082,327,1113,359,1081,390,1049,361" href="https://us02web.zoom.us/j/85826784514?pwd=UnZOMks5RnZmNmZyOXNjaTllM0kyZz09" target="_blank">
+	<area target="_blank" alt="Fort Mifflin Histort" title="Fort Mifflin Histort" href="http://www.fortmifflin.us/the-history" coords="342,132,120,253" shape="rect">
+    <area target="_blank" alt="7textures" title="7textures" href="http://7textures.com" coords="812,17,1105,73" shape="rect">
+    <area target="_self" alt="Front Gate" title="Front Gate" href="https://us02web.zoom.us/j/85826784514?pwd=UnZOMks5RnZmNmZyOXNjaTllM0kyZz09" coords="1422,487,1468,444,1510,484,1466,533" shape="poly">
+    <area target="_parent" alt="Programme" title="Programme" href="https://7textures.com/program" coords="1670,852,1790,960" shape="rect">
     </map>
-</div>
+  </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/jquery.rwdImageMaps.min.js"></script>
-<script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
+  <script>
     $(document).ready(function (e) {
       $('img[usemap]').rwdImageMaps();
     });
